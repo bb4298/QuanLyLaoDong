@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDanhSachNhanVien" targetNamespace="http://tempuri.org/DataSetDanhSachNhanVien.xsd" xmlns:mstns="http://tempuri.org/DataSetDanhSachNhanVien.xsd" xmlns="http://tempuri.org/DataSetDanhSachNhanVien.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLiLaoDongConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLiLaoDongConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyLaoDong.Properties.Settings.GlobalReference.Default.QuanLiLaoDongConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_DanhSachNhanVienTableAdapter" GeneratorDataComponentClassName="View_DanhSachNhanVienTableAdapter" Name="View_DanhSachNhanVien" UserDataComponentName="View_DanhSachNhanVienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLiLaoDongConnectionString (Settings)" DbObjectName="QuanLiLaoDong.dbo.View_DanhSachNhanVien" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT maNV, hoTenNV, ngaySinhNV, gioiTinhNV, DCNV, SDTNV, loaiNV, maPBNV, TrangThaiNV, tenPBNV, loaiPBNV FROM dbo.View_DanhSachNhanVien
+WHERE  (TrangThaiNV = 'L')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="maNV" DataSetColumn="maNV" />
+              <Mapping SourceColumn="hoTenNV" DataSetColumn="hoTenNV" />
+              <Mapping SourceColumn="ngaySinhNV" DataSetColumn="ngaySinhNV" />
+              <Mapping SourceColumn="gioiTinhNV" DataSetColumn="gioiTinhNV" />
+              <Mapping SourceColumn="DCNV" DataSetColumn="DCNV" />
+              <Mapping SourceColumn="SDTNV" DataSetColumn="SDTNV" />
+              <Mapping SourceColumn="loaiNV" DataSetColumn="loaiNV" />
+              <Mapping SourceColumn="maPBNV" DataSetColumn="maPBNV" />
+              <Mapping SourceColumn="TrangThaiNV" DataSetColumn="TrangThaiNV" />
+              <Mapping SourceColumn="tenPBNV" DataSetColumn="tenPBNV" />
+              <Mapping SourceColumn="loaiPBNV" DataSetColumn="loaiPBNV" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDanhSachNhanVien" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetDanhSachNhanVien" msprop:Generator_UserDSName="DataSetDanhSachNhanVien">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_DanhSachNhanVien" msprop:Generator_TableClassName="View_DanhSachNhanVienDataTable" msprop:Generator_TableVarName="tableView_DanhSachNhanVien" msprop:Generator_TablePropName="View_DanhSachNhanVien" msprop:Generator_RowDeletingName="View_DanhSachNhanVienRowDeleting" msprop:Generator_RowChangingName="View_DanhSachNhanVienRowChanging" msprop:Generator_RowEvHandlerName="View_DanhSachNhanVienRowChangeEventHandler" msprop:Generator_RowDeletedName="View_DanhSachNhanVienRowDeleted" msprop:Generator_UserTableName="View_DanhSachNhanVien" msprop:Generator_RowChangedName="View_DanhSachNhanVienRowChanged" msprop:Generator_RowEvArgName="View_DanhSachNhanVienRowChangeEvent" msprop:Generator_RowClassName="View_DanhSachNhanVienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="maNV" msprop:Generator_ColumnVarNameInTable="columnmaNV" msprop:Generator_ColumnPropNameInRow="maNV" msprop:Generator_ColumnPropNameInTable="maNVColumn" msprop:Generator_UserColumnName="maNV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hoTenNV" msprop:Generator_ColumnVarNameInTable="columnhoTenNV" msprop:Generator_ColumnPropNameInRow="hoTenNV" msprop:Generator_ColumnPropNameInTable="hoTenNVColumn" msprop:Generator_UserColumnName="hoTenNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ngaySinhNV" msprop:Generator_ColumnVarNameInTable="columnngaySinhNV" msprop:Generator_ColumnPropNameInRow="ngaySinhNV" msprop:Generator_ColumnPropNameInTable="ngaySinhNVColumn" msprop:Generator_UserColumnName="ngaySinhNV" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="gioiTinhNV" msprop:Generator_ColumnVarNameInTable="columngioiTinhNV" msprop:Generator_ColumnPropNameInRow="gioiTinhNV" msprop:Generator_ColumnPropNameInTable="gioiTinhNVColumn" msprop:Generator_UserColumnName="gioiTinhNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCNV" msprop:Generator_ColumnVarNameInTable="columnDCNV" msprop:Generator_ColumnPropNameInRow="DCNV" msprop:Generator_ColumnPropNameInTable="DCNVColumn" msprop:Generator_UserColumnName="DCNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SDTNV" msprop:Generator_ColumnVarNameInTable="columnSDTNV" msprop:Generator_ColumnPropNameInRow="SDTNV" msprop:Generator_ColumnPropNameInTable="SDTNVColumn" msprop:Generator_UserColumnName="SDTNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="loaiNV" msprop:Generator_ColumnVarNameInTable="columnloaiNV" msprop:Generator_ColumnPropNameInRow="loaiNV" msprop:Generator_ColumnPropNameInTable="loaiNVColumn" msprop:Generator_UserColumnName="loaiNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="maPBNV" msprop:Generator_ColumnVarNameInTable="columnmaPBNV" msprop:Generator_ColumnPropNameInRow="maPBNV" msprop:Generator_ColumnPropNameInTable="maPBNVColumn" msprop:Generator_UserColumnName="maPBNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TrangThaiNV" msprop:Generator_ColumnVarNameInTable="columnTrangThaiNV" msprop:Generator_ColumnPropNameInRow="TrangThaiNV" msprop:Generator_ColumnPropNameInTable="TrangThaiNVColumn" msprop:Generator_UserColumnName="TrangThaiNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tenPBNV" msprop:Generator_ColumnVarNameInTable="columntenPBNV" msprop:Generator_ColumnPropNameInRow="tenPBNV" msprop:Generator_ColumnPropNameInTable="tenPBNVColumn" msprop:Generator_UserColumnName="tenPBNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="loaiPBNV" msprop:Generator_ColumnVarNameInTable="columnloaiPBNV" msprop:Generator_ColumnPropNameInRow="loaiPBNV" msprop:Generator_ColumnPropNameInTable="loaiPBNVColumn" msprop:Generator_UserColumnName="loaiPBNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_DanhSachNhanVien" />
+      <xs:field xpath="mstns:maNV" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
