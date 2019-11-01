@@ -112,20 +112,20 @@ namespace QuanLyLaoDong.FormNVPDA
 
         private void loadDataHoanThanh()
         {
-           // listct = ctbll.layDanhSachCongTrinhDaHoanThanh();
-            //dataGridView1.DataSource = listct;
-            dataGridView1.DataSource = from a in db.CongTrinhs
-                                       where a.trangThai == "HT"
-                                       select new
-                                       {
-                                           a.maCongTrinh,
-                                           a.tenCongTrinh,
-                                           a.diaDiemXayDung,
-                                           a.luongCongTrinh,
-                                           a.ngayCapPhep,
-                                           a.ngayKhoiCong,
-                                           a.ngayHoanThanh,
-                                       };
+            List<CongTrinh> listct = ctbll.layDanhSachCongTrinhDaHoanThanh();
+            dataGridView1.DataSource = listct;
+            //dataGridView1.DataSource = from a in db.CongTrinhs
+            //                           where a.trangThai == "HT"
+            //                           select new
+            //                           {
+            //                               a.maCongTrinh,
+            //                               a.tenCongTrinh,
+            //                               a.diaDiemXayDung,
+            //                               a.luongCongTrinh,
+            //                               a.ngayCapPhep,
+            //                               a.ngayKhoiCong,
+            //                               a.ngayHoanThanh,
+            //                           };
         }
         #endregion
 
@@ -589,6 +589,7 @@ namespace QuanLyLaoDong.FormNVPDA
 
         private void Form_NVDA_QuanLyCongTrinh_Load(object sender, EventArgs e)
         {
+            loadDataThiCong();
             loadDataThiCong();
             btnXemThiCong.Enabled = false;
             btnHoanThanh.Enabled = true;

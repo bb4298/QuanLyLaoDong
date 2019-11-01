@@ -8,7 +8,6 @@ namespace BLL
 {
     public class PhanCongBLL
     {
-        
         QLLD_DBDataContext db = new QLLD_DBDataContext();
 
         public bool ThemPhanCong(PhanCong pc)

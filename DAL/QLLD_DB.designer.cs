@@ -57,7 +57,7 @@ namespace DAL
     #endregion
 		
 		public QLLD_DBDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QuanLiLaoDongConnectionString1, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QuanLiLaoDongConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

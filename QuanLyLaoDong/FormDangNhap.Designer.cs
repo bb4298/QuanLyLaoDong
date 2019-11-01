@@ -45,7 +45,7 @@
             // 
             // tbTaiKhoan
             // 
-            this.tbTaiKhoan.EditValue = "phuong123";
+            this.tbTaiKhoan.EditValue = "quang123";
             this.tbTaiKhoan.Location = new System.Drawing.Point(229, 166);
             this.tbTaiKhoan.Name = "tbTaiKhoan";
             this.tbTaiKhoan.Size = new System.Drawing.Size(305, 23);
@@ -83,7 +83,7 @@
             // 
             // tbMatKhau
             // 
-            this.tbMatKhau.EditValue = "phuong_123";
+            this.tbMatKhau.EditValue = "quang_123";
             this.tbMatKhau.Location = new System.Drawing.Point(229, 223);
             this.tbMatKhau.Name = "tbMatKhau";
             this.tbMatKhau.Size = new System.Drawing.Size(305, 23);
@@ -119,7 +119,7 @@
             // 
             // tbHashCode
             // 
-            this.tbHashCode.Location = new System.Drawing.Point(603, 197);
+            this.tbHashCode.Location = new System.Drawing.Point(666, 197);
             this.tbHashCode.Name = "tbHashCode";
             this.tbHashCode.Size = new System.Drawing.Size(305, 23);
             this.tbHashCode.TabIndex = 23;
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
-            this.ClientSize = new System.Drawing.Size(990, 445);
+            this.ClientSize = new System.Drawing.Size(648, 445);
             this.Controls.Add(this.tbHashCode);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);

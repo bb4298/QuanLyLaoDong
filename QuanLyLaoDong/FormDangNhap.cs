@@ -169,6 +169,16 @@ namespace QuanLyLaoDong
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
+            DateTime dt1 = new DateTime(2019,3,10);
+            DateTime dt2 = new DateTime(2019,3,5);
+            TimeSpan time = dt1.Subtract(dt2);
+
+            DateTime a = new DateTime(2019, 10, 15);//some datetime
+            DateTime now = DateTime.Now;
+            TimeSpan ts = now - a;
+            int days = Math.Abs(ts.Days);
+
+            tbHashCode.Text = days.ToString();
             
         }
 

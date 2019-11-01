@@ -567,7 +567,7 @@ namespace QuanLyLaoDong.FormNVPDA
                     {
                         string reSDT = @"^[0-9]{10,11}$";
                         Regex rgSDT = new Regex(reSDT);
-                        #endregion
+                     
 
                         DateTime now = DateTime.Now;
                         TimeSpan ts = now - dateTimePicker1.Value;
@@ -1363,4 +1363,5 @@ namespace QuanLyLaoDong.FormNVPDA
             Form_Main.f_TPB_QLNV = true;
         }
     }
+    #endregion
 }
